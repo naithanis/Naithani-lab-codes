@@ -1,6 +1,6 @@
 # Honeybee Clover Foraging Identification
 
-This project is designed to identify honeybee foraging activity on clover flowers using a combination of YOLO object detection and image classification models. Flower counts and foraging events are recorded over time given a time series of camera images.
+This project is designed to identify honeybee foraging activity on clover flowers using a combination of YOLO object detection and image classification models. Flower counts and foraging events are recorded over time, given a time series of camera images.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ python yolo_flower_forage_predict.py --flower_model_path <path_to_flower_model> 
 
 The output is a CSV file containing bounding box coordinates for detected flowers, their classification as foraged or not, and the corresponding image filenames.
 
-You can download pre-trained model weights [here](). Alternatively, you can train your own models using `yolo_flower_detect_train.py` for flower detection and `yolo_forage_classify_train.py` for foraging classification. For more details on training YOLO models, refer to the [Ultralytics YOLOv11 documentation](https://docs.ultralytics.com/models/yolo11/).
+You can download pre-trained model weights [here](https://oregonstate.box.com/s/11uck8e1102ymlw2mfw0gqqbzb5xgz97). Alternatively, you can train your own models using `yolo_flower_detect_train.py` for flower detection and `yolo_forage_classify_train.py` for foraging classification. For more details on training YOLO models, refer to the [Ultralytics YOLOv11 documentation](https://docs.ultralytics.com/models/yolo11/).
 
 For initial insect identification, this project used a pre-trained RegNet model from the InsectNet project ([Insect-Classifier](https://github.com/ShivaniChiranjeevi/Insect-Classifier/tree/main) on GitHub).
 
